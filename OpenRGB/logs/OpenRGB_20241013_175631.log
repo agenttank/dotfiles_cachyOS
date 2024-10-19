@@ -1,0 +1,12 @@
+    OpenRGB v0.9
+    Commit:  from 
+    Launched: 20241013_175631
+====================================================================================================
+
+0     |Info:    Found file: ff.orp attempting to validate header
+0     |Info:    Valid v4 profile found for ff
+29148 |Info:    Found file: ff.orp attempting to validate header
+29148 |Info:    Valid v4 profile found for ff
+37418 |Info:    Profile loading: Succeeded for ASUS ROG STRIX B550-F GAMING @ HID: /dev/hidraw0
+45811 |Info:    Found file: ff.orp attempting to validate header
+45811 |Info:    Valid v4 profile found for ff
