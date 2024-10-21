@@ -52,6 +52,8 @@ button:hover {
     color: @color11;
 	background-color: rgba(12, 12, 12, 0.5);
 	border: 3px solid @color11;
+        animation: gradient_f 20s ease-in infinite;
+	transition: all 0.3s cubic-bezier(.55,0.0,.28,1.682);
 }
 
 /* 
