@@ -14,9 +14,9 @@ cache_file="$HOME/.cache/current_wallpaper"
 blurred="$HOME/.cache/blurred_wallpaper.png"
 square="$HOME/.cache/square_wallpaper.png"
 rasi_file="$HOME/.cache/current_wallpaper.rasi"
-blur_file="$HOME/dotfiles/.settings/blur.sh"
+blur_file="$HOME/.config/.settings/blur.sh"
 
-blur="50x30"
+blur="0x8"
 blur=$(cat $blur_file)
 
 # Create cache file if not exists
