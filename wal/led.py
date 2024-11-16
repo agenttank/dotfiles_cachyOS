@@ -54,13 +54,13 @@ for x in range(3,5):
 
 
 #rechts
-for x in range(5,12):
+for x in range(5,5):
   motherboard.zones[1].leds[x].set_color(RGBColor(hpcorrect(round(rightcolor[0])),hpcorrect(round(rightcolor[1])),hpcorrect(round(rightcolor[2]))))
 
 #links
-for x in range(26,30):
+for x in range(49,52):
   motherboard.zones[1].leds[x].set_color(RGBColor(hpcorrect(round(middlecolor[0])),hpcorrect(round(middlecolor[1])),hpcorrect(round(middlecolor[2]))))
 
-#mitte
-for x in range(49,55):
-  motherboard.zones[1].leds[x].set_color(RGBColor(hpcorrect(round(leftcolor[0])),hpcorrect(round(leftcolor[1])),hpcorrect(round(leftcolor[2]))))
+##mitte
+#for x in range(49,55):
+#  motherboard.zones[1].leds[x].set_color(RGBColor(hpcorrect(round(leftcolor[0])),hpcorrect(round(leftcolor[1])),hpcorrect(round(leftcolor[2]))))
