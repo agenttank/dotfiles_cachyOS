@@ -8,6 +8,8 @@ config_version: 2
 settings:
   content.javascript.clipboard:
     global: access-paste
+  content.notifications.enabled:
+    https://scenenzbs.com: false
   url.searchengines:
     global:
-      DEFAULT: https://google.com/?q={}
+      DEFAULT: https://google.com/search?hl=en&q={}
