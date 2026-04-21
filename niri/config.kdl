@@ -2,12 +2,19 @@
 
 prefer-no-csd
 
-output "DP-1" {
+output "DP-2" {
     mode "3440x1440"
     scale 1.0
     variable-refresh-rate
     focus-at-startup
 }
+output "HDMI-A-1" {
+    mode "3840x2160"
+    scale 2.0
+    variable-refresh-rate
+    off
+}
+
 overview {
     backdrop-color "#203c42"
     zoom 0.68
@@ -56,7 +63,7 @@ input {
     mod-key "Alt"
     disable-power-key-handling
     warp-mouse-to-focus
-    focus-follows-mouse 
+    focus-follows-mouse max-scroll-amount="10%"
     workspace-auto-back-and-forth
     keyboard {
         xkb {
@@ -148,7 +155,7 @@ gestures {
 
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "steam-native -silent"
-spawn-at-startup "valent" "--gapplication-service"
+spawn-at-startup "valent --gapplication-service"
 
 hotkey-overlay {
     skip-at-startup
