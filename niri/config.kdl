@@ -1,4 +1,8 @@
 // https://niri.info
+spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "steam-native" "-silent"
+spawn-at-startup "valent --gapplication-service"
+spawn-at-startup "/home/stefan/.config/niri/niri_tile_to_n.py"
 
 prefer-no-csd
 
@@ -17,7 +21,7 @@ output "HDMI-A-1" {
 
 overview {
     backdrop-color "#203c42"
-    zoom 0.68
+    zoom 0.58
 }
 
 
@@ -94,6 +98,8 @@ input {
 layout {
     gaps 28
 
+    background-color "transparent"
+
     always-center-single-column
 
     insert-hint {
@@ -105,12 +111,11 @@ layout {
     center-focused-column "on-overflow"
 
     preset-column-widths {
-        proportion 0.88
-        proportion 0.70
+        proportion 0.75
         proportion 0.5
     }
 
-    default-column-width { proportion 0.7; }
+    default-column-width { proportion 0.5; }
 
     focus-ring {
         inactive-color "#FFFFFF"
@@ -153,9 +158,6 @@ gestures {
 
 }
 
-spawn-at-startup "qs" "-c" "noctalia-shell"
-spawn-at-startup "steam-native -silent"
-spawn-at-startup "valent --gapplication-service"
 
 hotkey-overlay {
     skip-at-startup
@@ -164,11 +166,31 @@ hotkey-overlay {
 
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
+blur {
+  passes 4        // more passes = stronger blur (default: 3)
+  offset 2.0      // sample distance per pass (default: 3.0)
+  noise 0.01      // grain overlay (default: 0.02)
+  saturation 1.6  // color saturation boost (default: 1.5)
+}
+
 window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
 }
 
+window-rule {
+  background-effect {
+    blur true
+    xray true
+  }
+}
+
+layer-rule {
+  match namespace="^noctalia-(background|launcher-overlay|dock)-.*$"
+  background-effect {
+    xray false
+  }
+}
 window-rule {
     match app-id=r#"firefox$"# title="^Picture-in-Picture$"
     open-floating true
@@ -307,12 +329,12 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
+    Mod+Plus { set-column-width "+10%"; }
 
     Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Shift+Plus { set-window-height "+10%"; }
 
-//    Mod+V       { toggle-window-floating; }
+    Mod+V       { toggle-window-floating; }
     Mod+Shift+V { switch-focus-between-floating-and-tiling; }
 
     Print { screenshot; }
@@ -335,7 +357,7 @@ animations {
     // Individual animations.
 
     workspace-switch {
-        spring damping-ratio=1.0 stiffness=1000 epsilon=0.0001
+        spring damping-ratio=1.9 stiffness=1000 epsilon=0.0011
     }
 
     window-open {
@@ -382,5 +404,11 @@ animations {
     }
 }
 
+debug {
+  // Allows notification actions and window activation from Noctalia.
+  honor-xdg-activation-with-invalid-serial
+}
+
 include "./noctalia.kdl"
+
 
