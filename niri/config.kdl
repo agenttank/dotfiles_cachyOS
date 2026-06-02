@@ -2,7 +2,6 @@
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "steam-native" "-silent"
 spawn-at-startup "valent --gapplication-service"
-spawn-at-startup "/home/stefan/.config/niri/niri_tile_to_n.py"
 
 prefer-no-csd
 
@@ -20,8 +19,8 @@ output "HDMI-A-1" {
 }
 
 overview {
-    backdrop-color "#203c42"
-    zoom 0.58
+    backdrop-color "#206163"
+    zoom 0.90
 }
 
 
@@ -71,6 +70,10 @@ input {
     workspace-auto-back-and-forth
     keyboard {
         xkb {
+            layout "eu"
+ //           variant "ger"
+//	    options "lv3:rctrl_switch"
+//	localectl set-x11-keymap de (for system-wide!)
         }
         numlock
     }
@@ -120,7 +123,7 @@ layout {
     focus-ring {
         inactive-color "#FFFFFF"
         urgent-color "#a6e3a1"
-        active-gradient from="#5e7e7e" to="#946c50" angle=45 relative-to="workspace-view"
+        active-gradient from="#32505A" to="#32505A" angle=45 relative-to="workspace-view"
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view" in="srgb-linear"
         // urgent-gradient from="#800" to="#a33" angle=45
     }
@@ -167,10 +170,10 @@ hotkey-overlay {
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 blur {
-  passes 4        // more passes = stronger blur (default: 3)
-  offset 2.0      // sample distance per pass (default: 3.0)
-  noise 0.01      // grain overlay (default: 0.02)
-  saturation 1.6  // color saturation boost (default: 1.5)
+  passes 2        // more passes = stronger blur (default: 3)
+  offset 2.8      // sample distance per pass (default: 3.0)
+  noise 0.02      // grain overlay (default: 0.02)
+  saturation 1.2  // color saturation boost (default: 1.5)
 }
 
 window-rule {

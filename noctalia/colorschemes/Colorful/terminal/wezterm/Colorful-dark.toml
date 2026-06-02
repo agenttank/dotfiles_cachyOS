@@ -1,0 +1,31 @@
+[colors]
+ansi = [
+    "#2A3038",
+    "#E74C3C",
+    "#61934F",
+    "#AAAA56",
+    "#2EA9FC",
+    "#9B59B6",
+    "#5FC8EF",
+    "#B6BDAC",
+]
+background = "#151A1E"
+brights = [
+    "#4A5560",
+    "#FF6B6B",
+    "#81C784",
+    "#C5CA5A",
+    "#64B5F6",
+    "#CE93D8",
+    "#80DEEA",
+    "#DDEAFA",
+]
+cursor_bg = "#2EA9FC"
+cursor_border = "#2EA9FC"
+cursor_fg = "#151A1E"
+foreground = "#DDEAFA"
+
+[colors.indexed]
+
+[metadata]
+name = "Colorful"

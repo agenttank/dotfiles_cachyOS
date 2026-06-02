@@ -1,0 +1,17 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/stefan/Downloads",
+  "thumbCacheReady": true,
+  "enabled": true,
+  "DP-2": {
+    "currentWallpaper": "/home/stefan/Downloads/magical-land-moewalls-com.mp4",
+    "isPlaying": true,
+    "noctaliaWallpaper": "/usr/share/wallpapers/UltrawideWallpapersDotNet-4632.jpeg"
+  }
+}

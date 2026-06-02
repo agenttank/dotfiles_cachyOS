@@ -1,0 +1,33 @@
+# Colors (Colorful Dark)
+
+[colors.bright]
+black = '#4A5560'
+blue = '#64B5F6'
+cyan = '#80DEEA'
+green = '#81C784'
+magenta = '#CE93D8'
+red = '#FF6B6B'
+white = '#DDEAFA'
+yellow = '#C5CA5A'
+
+[colors.cursor]
+cursor = '#2EA9FC'
+text = '#151A1E'
+
+[colors.normal]
+black = '#2A3038'
+blue = '#2EA9FC'
+cyan = '#5FC8EF'
+green = '#61934F'
+magenta = '#9B59B6'
+red = '#E74C3C'
+white = '#B6BDAC'
+yellow = '#AAAA56'
+
+[colors.primary]
+background = '#151A1E'
+foreground = '#DDEAFA'
+
+[colors.selection]
+background = '#2EA9FC'
+text = '#151A1E'

@@ -1,0 +1,44 @@
+{
+  "colorHistory": [
+    "#2D7373",
+    "#67D2FE",
+    "#23262A"
+  ],
+  "paletteColors": [
+    "#3D5E47",
+    "#61934F",
+    "#AAAA56",
+    "#2EA9FC",
+    "#5FC8EF",
+    "#B6BDAC",
+    "#A7DCF6",
+    "#DDEAFA"
+  ],
+  "installedLangs": [
+    "eng"
+  ],
+  "transAvailable": false,
+  "selectedOcrLang": "eng",
+  "screenshotPath": "",
+  "videoPath": "",
+  "filenameFormat": "",
+  "detectedRecorder": "",
+  "recordSkipConfirmation": false,
+  "recordCopyToClipboard": false,
+  "gifMaxSeconds": 30,
+  "detectedCompositor": "niri",
+  "stateIsRunning": false,
+  "stateActiveTool": "",
+  "stateMirrorVisible": false,
+  "resultHex": "",
+  "resultRgb": "",
+  "resultHsv": "",
+  "resultHsl": "",
+  "colorCapturePath": "",
+  "colorCacheBust": 0,
+  "qrResult": "",
+  "qrCapturePath": "",
+  "ocrResult": "",
+  "ocrCapturePath": "",
+  "translateResult": ""
+}

@@ -1,0 +1,33 @@
+# Colors (Colorful Light)
+
+[colors.bright]
+black = '#4A5560'
+blue = '#2EA9FC'
+cyan = '#5FC8EF'
+green = '#61934F'
+magenta = '#AB47BC'
+red = '#E74C3C'
+white = '#1A1E24'
+yellow = '#AAAA56'
+
+[colors.cursor]
+cursor = '#2EA9FC'
+text = '#F5F7FA'
+
+[colors.normal]
+black = '#2A3038'
+blue = '#1565C0'
+cyan = '#00838F'
+green = '#2E7D32'
+magenta = '#6A1B9A'
+red = '#C0392B'
+white = '#B6BDAC'
+yellow = '#7D7D2E'
+
+[colors.primary]
+background = '#F5F7FA'
+foreground = '#1A1E24'
+
+[colors.selection]
+background = '#2EA9FC'
+text = '#FFFFFF'
