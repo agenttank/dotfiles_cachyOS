@@ -4,21 +4,12 @@
     "#67D2FE",
     "#23262A"
   ],
-  "paletteColors": [
-    "#3D5E47",
-    "#61934F",
-    "#AAAA56",
-    "#2EA9FC",
-    "#5FC8EF",
-    "#B6BDAC",
-    "#A7DCF6",
-    "#DDEAFA"
-  ],
+  "paletteColors": "",
   "installedLangs": [
-    "eng"
+    "afr"
   ],
   "transAvailable": false,
-  "selectedOcrLang": "eng",
+  "selectedOcrLang": "afr",
   "screenshotPath": "",
   "videoPath": "",
   "filenameFormat": "",

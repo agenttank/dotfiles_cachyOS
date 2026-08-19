@@ -384,8 +384,8 @@
                     {
                         "barCount": 61,
                         "customHeight": 90,
-                        "customPrimaryColor": "#ffb4ab",
-                        "customSecondaryColor": "#e2e2e2",
+                        "customPrimaryColor": "#61934f",
+                        "customSecondaryColor": "#aaaa56",
                         "customWidth": 660,
                         "defaultSettings": {
                             "barCount": 32,

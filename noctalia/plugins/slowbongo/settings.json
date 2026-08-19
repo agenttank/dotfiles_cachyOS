@@ -19,6 +19,16 @@
     "/dev/input/event4",
     "/dev/input/event3",
     "/dev/input/event21",
-    "/dev/input/event20"
+    "/dev/input/event20",
+    "/dev/input/event6",
+    "/dev/input/event7",
+    "/dev/input/event8",
+    "/dev/input/event17",
+    "/dev/input/event22",
+    "/dev/input/event26",
+    "/dev/input/event25",
+    "/dev/input/event27",
+    "/dev/input/event23",
+    "/dev/input/event24"
   ]
 }
