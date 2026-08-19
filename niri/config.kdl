@@ -1,5 +1,6 @@
 // https://niri.info
-spawn-at-startup "qs" "-c" "noctalia-shell"
+// spawn-at-startup "qs" "-c" "noctalia-shell"
+spawn-at-startup "noctalia"
 spawn-at-startup "steam-native" "-silent"
 spawn-at-startup "valent --gapplication-service"
 
@@ -19,14 +20,14 @@ output "HDMI-A-1" {
 }
 
 overview {
-    backdrop-color "#206163"
+    backdrop-color "#2ea9fc"
     zoom 0.90
 }
 
 
 cursor {
     xcursor-theme "breeze_cursors"
-    xcursor-size 24
+    xcursor-size 28
     hide-after-inactive-ms 4000
 }
 
@@ -170,10 +171,10 @@ hotkey-overlay {
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 blur {
-  passes 2        // more passes = stronger blur (default: 3)
+  passes 3        // more passes = stronger blur (default: 3)
   offset 2.8      // sample distance per pass (default: 3.0)
   noise 0.02      // grain overlay (default: 0.02)
-  saturation 1.2  // color saturation boost (default: 1.5)
+  saturation 1  // color saturation boost (default: 1.5)
 }
 
 window-rule {
@@ -222,7 +223,8 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+D hotkey-overlay-title="Run an Application: wofi" { spawn "wofi"; }
+//    Mod+D hotkey-overlay-title="Run an Application: wofi" { spawn "wofi"; }
+    Mod+D hotkey-overlay-title="Run an Application:" { spawn-sh "noctalia msg panel-toggle launcher"; }
 
     // XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+"; }
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "pamixer -ui 3"; }
@@ -234,6 +236,9 @@ binds {
     Mod+Shift+M { spawn-sh "qs -c noctalia-shell ipc call notifications toggleHistory"; }
 
     Mod+O repeat=false { toggle-overview; }
+
+    // Cycle output modes: both on -> HDMI only -> DP-2 only
+    Mod+P hotkey-overlay-title="Cycle output mode" { spawn-sh "/home/stefan/.config/niri/toggle-outputs.sh"; }
 
     Mod+Q repeat=false { close-window; }
 
@@ -332,7 +337,7 @@ binds {
     Mod+Ctrl+C { center-visible-columns; }
 
     Mod+Minus { set-column-width "-10%"; }
-    Mod+Plus { set-column-width "+10%"; }
+    Mod+Equal { set-column-width "+10%"; }
 
     Mod+Shift+Minus { set-window-height "-10%"; }
     Mod+Shift+Plus { set-window-height "+10%"; }
